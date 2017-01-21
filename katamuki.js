@@ -6,7 +6,7 @@ Katamuki.js Ver.1.0
 window.onload=function(){
 	if(window.navigator.userAgent.toLowerCase().indexOf("chrome")!=-1){
 		document.body.style.transform="rotate(0.05deg)";
-    }else{
+	}else{
 		document.body.style.transform="rotate(0.001deg)";
 	}
 }
