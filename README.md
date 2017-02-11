@@ -11,4 +11,4 @@ katamuki.jsをscriptタグでhead要素内に記述して下さい。
     <script type="text/javascript" src="katamuki.js"></script>
 
 ## katamuki.min.jsについて
-一応用意しました。改行を取り除き、容量を50バイト程削減したファイルです。
+ソースコード圧縮に失敗していた為、廃止しました (2017年2月11日)
