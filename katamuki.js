@@ -1,6 +1,6 @@
 /*
-Katamuki.js Ver.1.2
-(c)2015-2018 Sora Arakawa all rights reserved.
+Katamuki.js Ver.2.0
+(c) 2017-2021 Sora Arakawa all rights reserved.
 Released under the MIT license
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,17 +23,16 @@ SOFTWARE.
 */
 
 window.onload=function(){
-	var image_list = document.getElementsByTagName("img");
-	if(window.navigator.userAgent.toLowerCase().indexOf("chrome")!=-1 && window.navigator.userAgent.toLowerCase().indexOf("edge")==-1){
-		document.body.style.transform="rotate(0.05deg)";
-		document.getElementsByTagName("img").style.transform="rotate(-0.05deg)";
-		for (var i=0; i<image_list.length; i++){
-			image_list[i].style.transform="rotate(-0.05deg)";
-		}
-	}else{
-		document.body.style.transform="rotate(0.001deg)";
-		for (var i=0; i<image_list.length; i++){
-			image_list[i].style.transform="rotate(-0.001deg)";
-		}
+	const image_list = document.getElementsByTagName("img");
+	for (let i = 0; i < image_list.length; i++) {
+		image_list[i].style.transform = "rotate(-0.028deg)";
+		image_list[i].style.backfaceVisibility = "hidden";
 	}
+	const hr_list = document.getElementsByTagName("hr");
+	for (let i = 0; i < hr_list.length; i++) {
+		hr_list[i].style.transform = "rotate(-0.028deg)";
+		hr_list[i].style.backfaceVisibility = "hidden";
+	}
+	document.body.style.transform = "rotate(0.028deg)";
+	document.body.style.fontSmoothing = "antialiased";
 }
